@@ -1,0 +1,183 @@
+:root {
+  --primary-color: rgba(56, 149, 196);
+  --secundary-color: rgba(5, 42, 66);
+  --background-color: rgba(251, 251, 254);
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background: var(--background-color);
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  margin: 10px auto;
+  background: rgba(9, 37, 91);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.header__logo {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: 1/1;
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.header__icons {
+  display: flex;
+  gap: 20px;
+}
+
+.header__icon {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: 1/1;
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Sensores */
+.sensors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sensor {
+  min-width: 280px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  background: #aaa;
+}
+
+.sensor__title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sensor__content {
+  display: flex;
+  align-items: center;
+}
+
+.sensor__icon {
+  width: 50px;
+  height: auto;
+  display: block;
+  fill: currentColor;
+}
+
+.sensor__data {
+  flex: 1;
+}
+
+.sensor__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.sensor__number {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* velocidad y aceleración angular */
+.sensor__number--angular {
+  font-size: 2rem;
+}
+
+/* Tipos de sensores */
+.sensor--temperature {
+  background: linear-gradient(to right, #fdc830, #f37335);
+}
+
+.sensor--altitude {
+  background: linear-gradient(to right, #1488cc, #2b32b2);
+}
+
+.sensor--gps-orientation {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.sensor--gps-speed {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.sensor--gps-latitude {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.sensor--gps-longitude {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.sensor--angular {
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
+}
+
+.sensor--pressure {
+  background: linear-gradient(to right, #71b280, #134e5e);
+}
+
+.sensor--time {
+  background: linear-gradient(to right, #cbad6d, #d53369);
+}
+
+/* Graficos */
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.chart {
+  background: linear-gradient(to right, #000000, #434343);
+  min-width: 550px;
+  background: linear-gradient(to bottom, #3541e0, #9f42f5);
+  background: #3541e0;
+  background: #1e1e1e;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.chart__title {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.chart__description {
+  font-size: 1.2rem;
+  color: #fff;
+}
