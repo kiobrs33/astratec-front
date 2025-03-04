@@ -179,7 +179,7 @@ export const Landing = () => {
               </svg>
               <div className="sensor__data">
                 <h2 className="sensor__text">
-                  <span className="sensor__number">{data?.presion}</span>°C
+                  <span className="sensor__number">{data?.presion}</span>hPa
                 </h2>
               </div>
             </div>
@@ -199,7 +199,7 @@ export const Landing = () => {
               </svg>
               <div className="sensor__data">
                 <h2 className="sensor__text">
-                  <span className="sensor__number sensor__number--time">{dateTime.toLocaleTimeString()}</span>°C
+                  <span className="sensor__number sensor__number--time">{dateTime.toLocaleTimeString()}</span>
                 </h2>
               </div>
             </div>
@@ -220,7 +220,7 @@ export const Landing = () => {
               </svg>
               <div className="sensor__data">
                 <h2 className="sensor__text">
-                  <span className="sensor__number">{data?.altitud}</span>°C
+                  <span className="sensor__number">{data?.altitud}</span>m
                 </h2>
               </div>
             </div>
@@ -241,7 +241,7 @@ export const Landing = () => {
               </svg>
               <div className="sensor__data">
                 <h2 className="sensor__text">
-                  <span className="sensor__number">{data?.gps.satelites}</span>
+                  <span className="sensor__number">{data?.gps.satelites}</span>°
                   °C
                 </h2>
               </div>
@@ -264,7 +264,7 @@ export const Landing = () => {
               <div className="sensor__data">
                 <h2 className="sensor__text">
                   <span className="sensor__number">{data?.gps.velocidad}</span>
-                  °C
+                  m/s
                 </h2>
               </div>
             </div>
@@ -285,7 +285,7 @@ export const Landing = () => {
               </svg>
               <div className="sensor__data">
                 <h2 className="sensor__text">
-                  <span className="sensor__number">{data?.gps.latitud}</span>°C
+                  <span className="sensor__number">{data?.gps.latitud}</span>°
                 </h2>
               </div>
             </div>
@@ -306,7 +306,7 @@ export const Landing = () => {
               </svg>
               <div className="sensor__data">
                 <h2 className="sensor__text">
-                  <span className="sensor__number">{data?.gps.longitud}</span>°C
+                  <span className="sensor__number">{data?.gps.longitud}</span>°
                 </h2>
               </div>
             </div>
@@ -330,7 +330,7 @@ export const Landing = () => {
                   <span className="sensor__number sensor__number--angular">
                     {data?.velocidadAngular.x}
                   </span>
-                  m/s
+                  rad/s
                 </h2>
               </div>
             </div>
@@ -350,7 +350,7 @@ export const Landing = () => {
                   <span className="sensor__number sensor__number--angular">
                     {data?.velocidadAngular.y}
                   </span>
-                  m/s
+                  rad/s
                 </h2>
               </div>
             </div>
@@ -370,7 +370,7 @@ export const Landing = () => {
                   <span className="sensor__number sensor__number--angular">
                     {data?.velocidadAngular.z}
                   </span>
-                  m/s
+                  rad/s
                 </h2>
               </div>
             </div>
