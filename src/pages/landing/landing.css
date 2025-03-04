@@ -14,11 +14,12 @@
 
 body {
   background: var(--background-color);
+  position: relative;
 }
 
 .dashboard {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 /* Header */
@@ -26,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 80px;
-  margin: 10px auto;
+  margin: 0 auto 10px;
   background: rgba(9, 37, 91);
   border-radius: 10px;
   padding: 10px;
@@ -40,6 +41,13 @@ body {
   background: #fff;
   border-radius: 20px;
   padding: 10px;
+}
+
+.header__time {
+  font-size: 2.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .header__icons {
@@ -151,6 +159,11 @@ body {
   background: linear-gradient(to right, #cbad6d, #d53369);
 }
 
+.sensor__number--time {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 /* Graficos */
 .charts {
   display: flex;
@@ -180,4 +193,24 @@ body {
 .chart__description {
   font-size: 1.2rem;
   color: #fff;
+}
+
+.btn-up {
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: goldenrod;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-up__icon {
+  width: 100%;
+  height: auto;
+  fill: currentColor;
 }
